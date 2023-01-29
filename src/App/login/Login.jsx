@@ -39,9 +39,9 @@ export default function Login() {
                          <input type="email" placeholder='Entrer votre email' autoFocus />
                          <label for="password" >Password : </label>
 
-                            <div className='password'>
-                         <input type={type} placeholder='Entrer votre mot de passe'/>
-                         <span onClick={handleToggle}><Icon icon={icon} size="20"></Icon> </span>
+                        <div className='password'>
+                             <input type={type} placeholder='Entrer votre mot de passe'/>
+                             <span onClick={handleToggle}><Icon icon={icon} size="18"></Icon> </span>
                          </div> 
 
                             <button type='submit' id='submit'>Envoyer</button> 

@@ -78,9 +78,11 @@ input[type = email],[type = password],[type=text]:focus{
     outline: none;
     border: none;
     box-shadow: 6px 6px 6px -1px var(--second-color);
-
 }
 
+span {
+    cursor: pointer;
+}
 label {
     display: block;
     margin: auto;
