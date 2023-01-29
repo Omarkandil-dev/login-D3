@@ -5,7 +5,6 @@ import Login from './App/login/Login';
 function App() {
   return (
     <div className="App">
-      {/* <h1>Main page </h1> */}
 
 <BrowserRouter>
     <Routes>

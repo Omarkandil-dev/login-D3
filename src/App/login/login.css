@@ -19,7 +19,7 @@
     align-items: center;
     height: 80vh;
     width: 70%;
-    background: linear-gradient(to left bottom , rgba(236, 236, 236) , var(--main-color) 90% );
+    background: linear-gradient(to right bottom , rgba(236, 236, 236) , var(--main-color) 90% );
     border-radius: 1rem;
     margin: 3.5rem auto;
     box-shadow: 0.5rem 0.5rem 2rem -1rem rgb(58,57,57);
@@ -31,19 +31,20 @@
     box-shadow: 0.5rem 0.5rem 2rem -1rem rgb(58,57,57);
     height: 80%;
     width: 100%;
+    
 }
 
 .left-side{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .img-class{
     display: flex;
     justify-content:start;
     height: 4rem;
-    margin-top: 1rem;
+    margin-top: -1rem;
     margin-left: 3rem;
     margin-bottom: 4px;
 }
@@ -57,7 +58,8 @@ form{
     margin-top: 2.5rem;
 }
 
-input{
+
+input[type=email],[type=password],[type=text]{
     display: block;
     border: none;
     height: 2rem;
@@ -67,15 +69,16 @@ input{
     padding: 0.2rem 1rem;
     transition: all 0.1s ease-in-out;
     border-radius: 10px;
+    font-weight: 600;
+    color: var(--second-color);
+    font-size: smaller;
 }
 
-input:focus{
+input[type = email],[type = password],[type=text]:focus{
     outline: none;
     border: none;
-}
+    box-shadow: 6px 6px 6px -1px var(--second-color);
 
-input:hover{
-    box-shadow: 2px 2px 9px -1px var(--main-color) ;
 }
 
 label {
@@ -89,23 +92,30 @@ label {
 }
 
 #submit{
-    width: 80%;
-    background-color: var(--main-color);
+    width: 40%;
+    background-color: var(--second-color);
     color: white;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
     padding: 0.5rem 1rem;
     transition: all 0.2s ease-in;
 }
 
+.password span{
+    position: relative;
+    bottom: 55px;
+    left: 33%;
+}
 #submit:hover{
     background-color: var(--second-color);
     box-shadow: 0.4px 0.5px 6px -3px var(--second-color) ;
+    transform: scale(1.05);
 }
 
 .welcome h3 {
     margin-left: 1rem;
-
+    color: var(--second-color)  ;
     float: left;
     margin-bottom: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -124,4 +134,16 @@ label {
     .right-side {
         display: none;
     }
+    .login-contain{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 90%;
+        background: linear-gradient(to right bottom , rgba(236, 236, 236) , var(--main-color) 90% );
+        border-radius: 1rem;
+        margin: 3.5rem auto;
+        box-shadow: 0.5rem 0.5rem 2rem -1rem rgb(58,57,57);
+    }
+    
   }
